@@ -1,0 +1,199 @@
+:root{
+    --vermelho: #e50914;
+    --preta: #141414;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*Elementos base*/
+body{
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(231, 223, 223);
+       
+}
+
+
+header .container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .Logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 15px;
+}
+
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*Início*/
+.inicio{
+    font-size: 20px;
+    margin: 4%;
+    margin-top: 14%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.container-entrar{
+    font-size: 10px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-entrar .botoes-entrar1, .botoes-entrar2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+
+/*Filme Principal*/
+.filme-principal{
+
+    font-size: 16px;
+    height: 550px;
+    background-size: cover;
+    padding-left: 10px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+    
+    #suits {background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/capa_suits.jpg');}
+    #twd {background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/capa_twd.jpg');}
+    #doctor {background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/capa_doctor.jpg');}
+    #pk {background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/capa_peak.jpg');}
+    #house {background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/capa_house.jpg');}
+    #small {background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/capa_smallville.jpg');}
+    #dyn {background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/capa_dinastia.jpg');}
+    #str {background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/capa_stranger.jpg');}
+    #lp {background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/capa_lupin.jpg');}
+    #out {background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/capa_outlander.jpg');}
+    #dre {background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/capa_dre.jpg');}
+    #jwd {background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/capa_jwd.jpg');}
+    #magic {background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/capa_doc1.jpg');}
+    #defcon {background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/capa_doc2.jpg');}
+
+
+
+.filme-principal .descricao{
+    margin-bottom: 40px;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.filme-principal .titulo{
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.filme-principal .botoes{
+    margin-bottom: 10px;
+}
+
+.filme-principal a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.filme-principal a:hover
+{
+    text-decoration: none;
+    color: black;
+}
+
+.filme-principal .container{
+    width: 60%;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    font-size: 12px;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+
+.botao i{
+    margin-right: 8px;
+}
+
+.box-filme{
+    margin-top: 10px;
+    height: 90%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.carrosel-filmes{
+    margin-top:10px;
+    margin-bottom:20px
+}
+
+
+
+.owl-prev::after{
+    content: "";
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    transform: rotate(135deg);
+    border: solid rgb(255, 254, 254);
+    border-width: 0 3px 3px 0;
+    top: 95%; left: 10%;
+    margin-top: 0px;
+    margin-left: 0px;
+ }
+.owl-next::after{
+    content: "";
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    transform: rotate(-40deg);
+    border: solid rgb(255, 255, 255);
+    border-width: 0 3px 3px 0;
+    top: 95%; left: 90%;
+    margin-top: 0px;
+    margin-left: 0px;
+ }
