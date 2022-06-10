@@ -1,0 +1,39 @@
+@media screen and (max-width:720px) {
+    header .container{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .botao{
+        margin-top: 5px;
+        width: 300px;
+    }
+
+    .inicio{
+        display:flex;
+        flex-direction: column;
+        
+        margin-top: 5px;
+        padding-bottom: 150px;
+        
+    }
+    
+    .container-entrar{
+        
+        flex-direction: column;
+        padding-top: 180px;
+
+    }
+
+    .botoes-entrar1{
+        width: 10px;
+        height: 10px;
+        padding-bottom: 220px;
+    }
+    .botoes-entrar2{
+        width: 10px;
+        height: 10px;
+        padding-bottom: 150px;
+    }
+        
+}
